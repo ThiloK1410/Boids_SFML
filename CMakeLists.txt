@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Boids src/main.cpp src/Engine.cpp headers/Engine.h src/Boid.cpp headers/Boid.h)
 
-include_directories(headers c:/SFML/include)
+include_directories(headers ${CMAKE_CURRENT_LIST_DIR}/SFML/include)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 find_package(SFML REQUIRED system window graphics)
 if (SFML_FOUND)
@@ -13,7 +13,6 @@ if (SFML_FOUND)
     target_link_libraries(Boids ${SFML_LIBRARIES})
 endif()
 
-file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 
 if(WIN32)
     file(GLOB BINARY_DEP_DLLS "${SFML_INCLUDE_DIR}/../bin/*.dll")
