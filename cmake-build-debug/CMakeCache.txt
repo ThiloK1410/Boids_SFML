@@ -15,12 +15,6 @@
 ########################
 
 //Value Computed by CMake
-Asteroids_BINARY_DIR:STATIC=C:/Users/thilo/CLionProjects/Boids_SFML/cmake-build-debug
-
-//Value Computed by CMake
-Asteroids_SOURCE_DIR:STATIC=C:/Users/thilo/CLionProjects/Boids_SFML
-
-//Value Computed by CMake
 Boids_BINARY_DIR:STATIC=C:/Users/thilo/CLionProjects/Boids_SFML/cmake-build-debug
 
 //Value Computed by CMake
@@ -130,7 +124,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Asteroids
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Boids
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/mingw64/bin/ld.exe
